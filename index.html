@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Untuk Alyaa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Kumpulan icon (garis tangan) yang dipakai di seluruh halaman -->
+    <svg class="sprite" aria-hidden="true" width="0" height="0" style="position:absolute">
+        <defs>
+            <symbol id="i-flower" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="2.1"/>
+                <ellipse cx="12" cy="6.3" rx="2.7" ry="3.6"/>
+                <ellipse cx="12" cy="6.3" rx="2.7" ry="3.6" transform="rotate(72 12 12)"/>
+                <ellipse cx="12" cy="6.3" rx="2.7" ry="3.6" transform="rotate(144 12 12)"/>
+                <ellipse cx="12" cy="6.3" rx="2.7" ry="3.6" transform="rotate(216 12 12)"/>
+                <ellipse cx="12" cy="6.3" rx="2.7" ry="3.6" transform="rotate(288 12 12)"/>
+            </symbol>
+            <symbol id="i-heart" viewBox="0 0 24 24">
+                <path d="M12 20.5C5 15.3 3 11.9 3 8.9 3 6.4 5 4.5 7.4 4.5c1.8 0 3.4 1 4.6 2.8 1.2-1.8 2.8-2.8 4.6-2.8C19 4.5 21 6.4 21 8.9c0 3-2 6.4-9 11.6z"/>
+            </symbol>
+            <symbol id="i-sparkle" viewBox="0 0 24 24">
+                <path d="M12 3c.6 4.6 2.4 6.4 9 9-6.6 2.6-8.4 4.4-9 9-.6-4.6-2.4-6.4-9-9 6.6-2.6 8.4-4.4 9-9z"/>
+            </symbol>
+            <symbol id="i-bow" viewBox="0 0 24 24">
+                <path d="M12 12C9 8 4.5 7.5 4 10c-.5 2.6 3.5 4 8 2z"/>
+                <path d="M12 12c3-4 7.5-4.5 8-2 .5 2.6-3.5 4-8 2z"/>
+                <circle cx="12" cy="12" r="1.5"/>
+                <path d="M11 13.5 8.5 19M13 13.5l2.5 5.5"/>
+            </symbol>
+            <symbol id="i-butterfly" viewBox="0 0 24 24">
+                <path d="M12 7.5v10.5"/>
+                <path d="M12 7.5 10.5 5M12 7.5 13.5 5"/>
+                <path d="M11.4 11C9.5 5.2 4.5 4.6 4.2 8.2c-.2 2.4 3.1 3.9 7.2 2.8z"/>
+                <path d="M11.4 13.6c-3.4.8-5.3 3.4-3.6 5.3 1.6 1.8 3.6-.5 3.6-5.3z"/>
+                <path d="M12.6 11c1.9-5.8 6.9-6.4 7.2-2.8.2 2.4-3.1 3.9-7.2 2.8z"/>
+                <path d="M12.6 13.6c3.4.8 5.3 3.4 3.6 5.3-1.6 1.8-3.6-.5-3.6-5.3z"/>
+            </symbol>
+            <symbol id="i-book" viewBox="0 0 24 24">
+                <path d="M4 5.5C7 4 9.5 4.3 12 6c2.5-1.7 5-2 8-.5V19c-3-1.5-5.5-1.2-8 .5-2.5-1.7-5-2-8-.5z"/>
+                <path d="M12 6v13.5"/>
+            </symbol>
+            <symbol id="i-note" viewBox="0 0 24 24">
+                <path d="M9 18V5l11-2v13"/>
+                <circle cx="6.5" cy="18" r="2.5"/>
+                <circle cx="17.5" cy="16" r="2.5"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- Latar bergerak: bunga, kelopak, love, dan kilauan -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- Tombol Musik Mengambang -->
+    <button id="music-btn" class="music-control" aria-label="Putar Musik">
+        <svg class="ico music-ico"><use href="#i-note"/></svg>
+        <span class="music-label">Play</span>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="lagu/imagination.mpeg" type="audio/mpeg">
+    </audio>
+
+    <main class="page">
+
+        <!-- Section 1: Pembuka Khusus Alyaa -->
+        <header class="hero">
+            <div class="hero-content">
+                <svg class="ico doodle d1" style="--s:46px"><use href="#i-flower"/></svg>
+                <svg class="ico doodle d2 fill" style="--s:30px"><use href="#i-heart"/></svg>
+                <svg class="ico doodle d3" style="--s:26px"><use href="#i-sparkle"/></svg>
+                <svg class="ico doodle d4" style="--s:40px"><use href="#i-butterfly"/></svg>
+
+                <h1>halo alyaa</h1>
+                <svg class="scribble" viewBox="0 0 320 24" aria-hidden="true"><path d="M6 14 C 40 4, 70 22, 110 12 S 190 4, 230 14 S 290 18, 314 8"/></svg>
+
+                <p class="subtitle">aku buat ini untuk kamu sebagai kenang-kenangan, padahal aku berharap kita jangan sampai jadi kenangan✌🏻😞</p>
+
+                <div class="for-you-wrap">
+                    <svg class="ico fill beat" style="--s:22px"><use href="#i-heart"/></svg>
+                    <p id="for-you-text" class="for-you-reveal" aria-label="i Made this website just for you">i Made this website just for you</p>
+                    <svg class="ico fill beat" style="--s:22px"><use href="#i-heart"/></svg>
+                </div>
+
+                <span class="music-hint">(nyalain musiknya dulu di pojok kanan atas ya)</span>
+                <a href="#cerita-awal" class="scroll-down">Scroll pelan-pelan ke bawah ↓</a>
+            </div>
+        </header>
+
+        <!-- Section 2: Tiga Card Interaktif Berdampingan -->
+        <section id="cerita-awal" class="section section-wide">
+            <div class="cards-row">
+                <!-- Card 1: awal kita kenalan -->
+                <div class="expand-card reveal" id="kenalan-card" role="button" tabindex="0" aria-expanded="false">
+                    <svg class="ico card-deco" style="--s:28px"><use href="#i-flower"/></svg>
+                    <div class="expand-header">
+                        <h2>awal kita kenalan</h2>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <p class="tap-hint">klik aja</p>
+
+                    <div class="expand-body">
+                        <div class="expand-inner">
+                            <p class="story-text">kita kenal secara tidak sengaja di Leo, dan first impression kamu kaget aku nya fast respon 😭</p>
+                            <div class="chat-screenshot">
+                                <img src="gambar/gambar4.jpeg" alt="Screenshot chat pertama di Leo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: nama kamu -->
+                <div class="expand-card reveal" id="nama-card" role="button" tabindex="0" aria-expanded="false">
+                    <svg class="ico card-deco fill" style="--s:24px"><use href="#i-heart"/></svg>
+                    <div class="expand-header">
+                        <h2>nama kamu</h2>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <p class="tap-hint">Klik aja</p>
+
+                    <div class="expand-body">
+                        <div class="expand-inner">
+                            <p class="story-text">kamu ngasi tau nama asli kamu supaya aku ilfeel liat muka kamu yg di google sekaligus jadi filter kamu buat orang, hahaha untung nya aku lulus filter nya😏</p>
+                            <div class="chat-screenshot">
+                                <img src="gambar/gambar5.jpeg" alt="Screenshot chat soal nama asli">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: pengakuan -->
+                <div class="expand-card reveal" id="pengakuan-card" role="button" tabindex="0" aria-expanded="false">
+                    <svg class="ico card-deco" style="--s:26px"><use href="#i-bow"/></svg>
+                    <div class="expand-header">
+                        <h2>pengakuan</h2>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <p class="tap-hint">Klik aja</p>
+
+                    <div class="expand-body">
+                        <div class="expand-inner">
+                            <p class="story-text">" Alya Rokhayatul Aisyi secara tidak langsung confess kepada Abdul Ghofur Al'Arif " kamu mau nerima aku yg bahkan kita belum saling tau real face masing-masing, dan kamu secara terang-terangan mengatakan hal itu, aku bahkan udah ngomong kalo bisa aja penampilan ku ga sesuai dengan ekspektasi kamu dan kamu jawab "kan aku yg suka sama kamu, jadi kalo pun bentukan kamu aneh kayak cacing atau batu aku yang akan berubah supaya bisa sama kamu" dan karena ini aku jadi yakin kalo perasaan kamu itu beneran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider" aria-hidden="true">
+            <span></span>
+            <svg class="ico"><use href="#i-flower"/></svg>
+            <svg class="ico fill sm"><use href="#i-heart"/></svg>
+            <svg class="ico"><use href="#i-flower"/></svg>
+            <span></span>
+        </div>
+
+        <!-- Section 3: Tentang Kamu -->
+        <section id="tentang-kamu" class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">tentang kamu</h2>
+                <p class="section-subtitle">ini pandangan aku tentang kamu,btw fotonya ngambil dari ig, tolong maafkan saya😭🙏🏻</p>
+            </div>
+
+            <div class="cute-gallery">
+                <!-- Bingkai 1: Rasio 1:1 -->
+                <div class="cute-frame frame-a reveal" role="button" tabindex="0" aria-label="Buka pop-up foto 1">
+                    <span class="tape"></span>
+                    <span class="sticker-top">
+                        <svg class="ico" style="--s:20px"><use href="#i-sparkle"/></svg>
+                        <svg class="ico" style="--s:20px"><use href="#i-book"/></svg>
+                    </span>
+                    <div class="photo-box ratio-1-1">
+                        <img src="gambar/gambar1.jpeg" alt="Foto Alyaa 1">
+                    </div>
+                    <p class="frame-caption">anak ambis,pintar dan keren</p>
+                    <span class="sticker-bottom"><svg class="ico" style="--s:22px"><use href="#i-sparkle"/></svg></span>
+                </div>
+
+                <!-- Bingkai 2: Rasio 1:1 -->
+                <div class="cute-frame frame-b reveal" role="button" tabindex="0" aria-label="Buka pop-up foto 2">
+                    <span class="tape"></span>
+                    <span class="sticker-top">
+                        <svg class="ico" style="--s:20px"><use href="#i-bow"/></svg>
+                        <svg class="ico" style="--s:20px"><use href="#i-butterfly"/></svg>
+                    </span>
+                    <div class="photo-box ratio-1-1">
+                        <img src="gambar/gambar2.jpeg" alt="Foto Alyaa 2">
+                    </div>
+                    <p class="frame-caption">cantik imut lucu dan menggemaskan</p>
+                    <span class="sticker-bottom"><svg class="ico" style="--s:22px"><use href="#i-flower"/></svg></span>
+                </div>
+
+                <!-- Bingkai 3: Rasio 9:18 -->
+                <div class="cute-frame frame-c frame-tall reveal" role="button" tabindex="0" aria-label="Buka pop-up foto 3">
+                    <span class="tape"></span>
+                    <span class="sticker-top">
+                        <svg class="ico" style="--s:20px"><use href="#i-flower"/></svg>
+                        <svg class="ico fill" style="--s:18px"><use href="#i-heart"/></svg>
+                    </span>
+                    <div class="photo-box ratio-9-18">
+                        <img src="gambar/gambar3.jpeg" alt="Foto Alyaa 3">
+                    </div>
+                    <p class="frame-caption">senyum manis dan tertawa hangat, (kuharap bisa terus mendengarkan suara tertawa itu)</p>
+                    <span class="sticker-bottom"><svg class="ico fill" style="--s:20px"><use href="#i-heart"/></svg></span>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider" aria-hidden="true">
+            <span></span>
+            <svg class="ico"><use href="#i-butterfly"/></svg>
+            <svg class="ico fill sm"><use href="#i-heart"/></svg>
+            <svg class="ico"><use href="#i-butterfly"/></svg>
+            <span></span>
+        </div>
+
+        <!-- Section 4: Surat Untuk Mu -->
+        <section id="surat-untuk-mu" class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">surat untuk mu</h2>
+            </div>
+
+            <div class="love-letter-wrapper reveal">
+                <div class="wax-seal" aria-hidden="true"><svg class="ico fill" style="--s:24px"><use href="#i-heart"/></svg></div>
+                <article class="love-letter">
+                    <svg class="ico letter-deco ld1" style="--s:34px"><use href="#i-flower"/></svg>
+                    <svg class="ico letter-deco ld2 fill" style="--s:20px"><use href="#i-heart"/></svg>
+
+                    <p class="letter-greeting">Untuk Alyaa,</p>
+
+                    <p class="letter-paragraph">sebenarnya aku mau buat website untuk kado ulang tahun kamu, tapi karena hal itu jadi aku bikin nya sekarang, ga bagus sihh kebanyakan juga minta bantuan dari AI hehehe, meski cuma sebentar aku bersyukur banget bisa kenal sama kamu, bersyukur banget asli dah, kamu orang pertama yg confess ke aku, orang pertama yg mau milih aku, orang pertama juga yg nerima aku,juga orang pertama yang aku tau ternyata ada loh yg suka secara romantis ke aku, kamu bikin aku sadar ternyata aku pun layak buat dicintai, Jujur ini pertama kali nya bagi aku (pasti kmu bilang "kalo kamu bohong pun aku gatau) hahaha, aku pun juga gatau apakah kamu itu bohong atau nggak, gapapa itu cukup buat aku, makasih udah liat website ini, makasih juga udah mau ngobrol sama aku, makasih juga udah milih aku, makasih udah confess ke aku, sebenarnya aku juga pengen kita bisa di hubungan yg lebih serius, tapi apalah daya wkwkwk, yowes lah.</p>
+
+                    <p class="letter-paragraph">Alya Rokhayatul Aisyi, kamu tuh pinter, ambis, punya mimpi yg gede, punya kepribadian yg lembut, imut, lucu, menggemaskan, jujur sama perasaan kamu, selalu mikirin orang lain, terus juga suara ketawa kamu tuh memorable banget tau ga wkwkw, kamu juga orang nya punya integritas sendiri, contoh nya kamu pernah bilang "yg namanya komunikasi tuh dua arah, jadi dua²nya harus saling ngomong,bukan cuma salah satu nya aja" gituu, semoga kamu bahagia, sehat selalu, terus juga semangat teruss yaa, terus jangan lupa sama aku yaaa wkwkw</p>
+
+                    <div class="letter-signoff">
+                        <p class="letter-closing">Dari aku,</p>
+                        <p class="letter-signature">Abdul Ghofur Al'Arif</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="divider" aria-hidden="true">
+            <span></span>
+            <svg class="ico"><use href="#i-flower"/></svg>
+            <svg class="ico fill sm"><use href="#i-heart"/></svg>
+            <svg class="ico"><use href="#i-flower"/></svg>
+            <span></span>
+        </div>
+
+        <!-- Section 5: Penutup Terima Kasih -->
+        <footer id="terima-kasih" class="footer section">
+            <div class="closing-box reveal">
+                <div class="closing-icons" aria-hidden="true">
+                    <svg class="ico" style="--s:30px"><use href="#i-flower"/></svg>
+                    <svg class="ico fill beat" style="--s:26px"><use href="#i-heart"/></svg>
+                    <svg class="ico" style="--s:30px"><use href="#i-flower"/></svg>
+                </div>
+                <h2>terima kasih</h2>
+                <p class="closing-message">makasihh ya uadh liat sampai akhir, aku masih ga nyangka ini beneran nyata, makasihh buat semuanya, jangan lupain aku ya</p>
+                <!-- Ganti 6281234567890 dengan nomor WhatsApp kamu -->
+                <a href="https://wa.me/6285961433095?text=baguss%20bangett%2C%20aku%20jadi%20terhura%20loh%20hahahaha%2C%20btw%20kamu%20mau%20foto%20imut%20aku%20ga%3F" target="_blank" rel="noopener noreferrer" class="wa-btn">
+                    kasi rating dongg
+                </a>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Pop-up Bingkai Foto -->
+    <div id="photo-modal" class="photo-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="photo-modal-backdrop" id="photo-modal-backdrop"></div>
+        <div class="photo-modal-content" id="photo-modal-content">
+            <div id="photo-modal-frame"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
